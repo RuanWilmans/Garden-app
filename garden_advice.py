@@ -7,6 +7,8 @@ uses functions + a data dictionary for clarity and extensibility.
 """
 # Refactored version – Issue #1
 
+// Added simple UI interactivity – Issue #2
+
 from typing import Dict
 
 
