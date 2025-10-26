@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"UTF-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+  <title>Garden Advice</title>
+  <style>
+    body{font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto; margin:0; padding:24px; background:#0b0c10; color:#e6e9ee}
+    .card{max-width:720px; margin:0 auto; background:#12151d; border:1px solid #1e2430; border-radius:14px; padding:20px; box-shadow:0 8px 28px rgba(0,0,0,.25)}
+    h1{margin:0 0 8px 0}
+    p{color:#9aa4af}
+    label{display:block; margin:10px 0 6px}
+    select,button{width:100%; padding:10px; border-radius:10px; border:1px solid #2a3346; background:#0f1420; color:#dbe6f7}
+    button{cursor:pointer; margin-top:12px}
+    .out{margin-top:14px; padding:12px; background:#0f1320; border:1px solid #2a3346; border-radius:10px; min-height:48px}
+    a{color:#70b8ff}
+  </style>
+</head>
+<body>
+  <div class=\"card\">
+    <h1>Garden Advice 🌿</h1>
+    <p>Select a season and plant type to get tailored advice.</p>
+
+    <form id=\"advice-form\">
+      <label for=\"season\">Season</label>
+      <select id=\"season\" name=\"season\" required>
+        <option value=\"summer\">Summer</option>
+        <option value=\"winter\">Winter</option>
+        <option value=\"spring\">Spring</option>
+        <option value=\"autumn\">Autumn</option>
+      </select>
+
+      <label for=\"plant\">Plant type</label>
+      <select id=\"plant\" name=\"plant\" required>
+        <option value=\"flower\">Flower</option>
+        <option value=\"vegetable\">Vegetable</option>
+        <option value=\"succulent\">Succulent</option>
+      </select>
+
+      <button type=\"submit\">Get advice</button>
+    </form>
+
+    <div class=\"out\" id=\"advice-output\" aria-live=\"polite\"></div>
+
+    <p style=\"margin-top:16px\">Prefer Python? Run <code>garden_advice.py</code> in a terminal.</p>
+  </div>
+
+  <script type=\"module\" src=\"garden_advice.js\"></script>
+</body>
+</html>
