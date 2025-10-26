@@ -5,8 +5,10 @@ This script gives gardening advice based on season and plant type.
 It replaces hardcoded values with user input, adds validation, and
 uses functions + a data dictionary for clarity and extensibility.
 """
+# Refactored version – Issue #1
 
 from typing import Dict
+
 
 ADVICE_MAP: Dict[str, Dict[str, str]] = {
     "summer": {
