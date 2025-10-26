@@ -8,6 +8,8 @@ uses functions + a data dictionary for clarity and extensibility.
 
 from typing import Dict
 
+# Refactored version – Issue #1
+
 ADVICE_MAP: Dict[str, Dict[str, str]] = {
     "summer": {
         "flower": "Water regularly, mulch lightly, and provide midday shade.",
